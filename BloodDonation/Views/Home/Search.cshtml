@@ -1,0 +1,38 @@
+﻿@model IEnumerable<DataLayer.User>
+
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_HomeSearchLayout.cshtml";
+}
+
+<center>
+
+    <h1>Thanks For Search</h1>
+
+
+    @if (ViewBag.C == 0)
+    {
+        <h2>
+            Sorry......No Donor is available Right Now !!!!!!!!!!!!!!!
+        </h2>
+    }
+ 
+
+     @if (ViewBag.c > 0)
+     {
+        <h2>Number Of Donor Available @ViewBag.C </h2>
+        <br/>
+        <h3>Please <a href="../User/Login">Login </a>or <a href="../User/Registration">Register </a>to Contact with the Donor</h3>
+     }
+   
+
+
+
+</center>
+
+
+
+
+
+
+
